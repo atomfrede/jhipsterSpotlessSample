@@ -13,13 +13,13 @@ import io.github.jhipster.config.JHipsterConstants;
 import io.github.jhipster.config.JHipsterProperties;
 import io.github.jhipster.web.filter.CachingHttpHeadersFilter;
 
-import io.undertow.Undertow;
-import io.undertow.Undertow.Builder;
-import io.undertow.UndertowOptions;
-
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.servlet.InstrumentedFilter;
 import com.codahale.metrics.servlets.MetricsServlet;
+
+import io.undertow.Undertow;
+import io.undertow.Undertow.Builder;
+import io.undertow.UndertowOptions;
 
 import org.apache.commons.io.FilenameUtils;
 import org.h2.server.web.WebServlet;

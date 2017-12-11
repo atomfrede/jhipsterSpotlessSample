@@ -9,9 +9,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import io.github.jhipster.application.JhipsterSpotlessSampleApp;
 import io.github.jhipster.application.web.rest.vm.LoggerVM;
 
-import ch.qos.logback.classic.AsyncAppender;
-import ch.qos.logback.classic.LoggerContext;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,6 +19,9 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+
+import ch.qos.logback.classic.AsyncAppender;
+import ch.qos.logback.classic.LoggerContext;
 
 /**
  * Test class for the LogsResource REST controller.

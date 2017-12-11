@@ -12,6 +12,6 @@ spotless {
         indentWithSpaces()
         removeUnusedImports()
 
-        importOrder 'io.github.jhipster', 'com', 'org', 'java', 'javax'
+        importOrder 'io.github.jhipster', 'com', 'io', 'org', 'java', 'javax', ''
     }
 }

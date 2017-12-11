@@ -1,7 +1,5 @@
 package io.github.jhipster.application.web.rest;
 
-import com.codahale.metrics.annotation.Timed;
-
 import io.github.jhipster.application.domain.User;
 import io.github.jhipster.application.repository.UserRepository;
 import io.github.jhipster.application.security.SecurityUtils;
@@ -11,6 +9,8 @@ import io.github.jhipster.application.service.dto.UserDTO;
 import io.github.jhipster.application.web.rest.errors.*;
 import io.github.jhipster.application.web.rest.vm.KeyAndPasswordVM;
 import io.github.jhipster.application.web.rest.vm.ManagedUserVM;
+
+import com.codahale.metrics.annotation.Timed;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

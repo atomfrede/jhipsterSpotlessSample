@@ -1,7 +1,5 @@
 package io.github.jhipster.application.web.rest;
 
-import com.codahale.metrics.annotation.Timed;
-
 import io.github.jhipster.application.config.Constants;
 import io.github.jhipster.application.domain.User;
 import io.github.jhipster.application.repository.UserRepository;
@@ -15,6 +13,8 @@ import io.github.jhipster.application.web.rest.errors.LoginAlreadyUsedException;
 import io.github.jhipster.application.web.rest.util.HeaderUtil;
 import io.github.jhipster.application.web.rest.util.PaginationUtil;
 import io.github.jhipster.web.util.ResponseUtil;
+
+import com.codahale.metrics.annotation.Timed;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

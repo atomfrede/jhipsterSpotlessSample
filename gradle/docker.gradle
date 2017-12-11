@@ -27,4 +27,3 @@ task buildDocker(type: DockerBuildImage, dependsOn: 'copyDockerFiles') {
     inputDir = project.file("${project.buildDir}/docker")
     tags = ["jhipsterspotlesssample:latest".toString(), "jhipsterspotlesssample:${project.version}".toString()]
 }
-

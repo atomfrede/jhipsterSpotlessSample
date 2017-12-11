@@ -2,9 +2,7 @@ package io.github.jhipster.application.security.jwt;
 
 import io.github.jhipster.config.JHipsterProperties;
 
-import java.util.*;
-import java.util.stream.Collectors;
-import javax.annotation.PostConstruct;
+import io.jsonwebtoken.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +13,10 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Component;
 
-import io.jsonwebtoken.*;
+import java.util.*;
+import java.util.stream.Collectors;
+
+import javax.annotation.PostConstruct;
 
 @Component
 public class TokenProvider {

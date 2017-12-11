@@ -1,15 +1,14 @@
 package io.github.jhipster.application.service;
 
+import io.github.jhipster.application.config.Constants;
 import io.github.jhipster.application.domain.Authority;
 import io.github.jhipster.application.domain.User;
 import io.github.jhipster.application.repository.AuthorityRepository;
-import io.github.jhipster.application.config.Constants;
 import io.github.jhipster.application.repository.UserRepository;
 import io.github.jhipster.application.security.AuthoritiesConstants;
 import io.github.jhipster.application.security.SecurityUtils;
-import io.github.jhipster.application.service.util.RandomUtil;
 import io.github.jhipster.application.service.dto.UserDTO;
-import io.github.jhipster.application.web.rest.vm.ManagedUserVM;
+import io.github.jhipster.application.service.util.RandomUtil;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

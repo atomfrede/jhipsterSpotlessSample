@@ -2,8 +2,8 @@ package io.github.jhipster.application.web.rest;
 
 import io.github.jhipster.application.service.AuditEventService;
 import io.github.jhipster.application.web.rest.util.PaginationUtil;
-
 import io.github.jhipster.web.util.ResponseUtil;
+
 import org.springframework.boot.actuate.audit.AuditEvent;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

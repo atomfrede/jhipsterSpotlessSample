@@ -1,7 +1,8 @@
 package io.github.jhipster.application.web.rest;
 
-import io.github.jhipster.application.config.Constants;
 import com.codahale.metrics.annotation.Timed;
+
+import io.github.jhipster.application.config.Constants;
 import io.github.jhipster.application.domain.User;
 import io.github.jhipster.application.repository.UserRepository;
 import io.github.jhipster.application.security.AuthoritiesConstants;
@@ -25,10 +26,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.*;
+
+import javax.validation.Valid;
 
 /**
  * REST controller for managing users.

@@ -8,6 +8,10 @@ spotless {
     }
 
     java {
+        trimTrailingWhitespace()
+        indentWithSpaces()
         removeUnusedImports()
+
+        importOrder 'io.github.jhipster', 'org', 'java', 'javax'
     }
 }

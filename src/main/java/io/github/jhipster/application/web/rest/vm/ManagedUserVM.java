@@ -1,6 +1,7 @@
 package io.github.jhipster.application.web.rest.vm;
 
 import io.github.jhipster.application.service.dto.UserDTO;
+
 import javax.validation.constraints.Size;
 
 /**

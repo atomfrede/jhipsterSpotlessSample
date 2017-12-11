@@ -1,7 +1,6 @@
 package io.github.jhipster.application.web.rest;
 
 import io.github.jhipster.application.config.DefaultProfileUtil;
-
 import io.github.jhipster.config.JHipsterProperties;
 
 import org.springframework.core.env.Environment;

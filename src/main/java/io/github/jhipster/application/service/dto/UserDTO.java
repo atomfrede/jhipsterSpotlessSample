@@ -1,17 +1,17 @@
 package io.github.jhipster.application.service.dto;
 
 import io.github.jhipster.application.config.Constants;
-
 import io.github.jhipster.application.domain.Authority;
 import io.github.jhipster.application.domain.User;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 
-import javax.validation.constraints.*;
 import java.time.Instant;
 import java.util.Set;
 import java.util.stream.Collectors;
+
+import javax.validation.constraints.*;
 
 /**
  * A DTO representing a user, with his authorities.

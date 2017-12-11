@@ -1,9 +1,13 @@
 package io.github.jhipster.application.repository;
 
+import static io.github.jhipster.application.repository.CustomAuditEventRepository.EVENT_DATA_COLUMN_MAX_LENGTH;
+import static org.assertj.core.api.Assertions.assertThat;
+
 import io.github.jhipster.application.JhipsterSpotlessSampleApp;
 import io.github.jhipster.application.config.Constants;
 import io.github.jhipster.application.config.audit.AuditEventConverter;
 import io.github.jhipster.application.domain.PersistentAuditEvent;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,15 +20,13 @@ import org.springframework.security.web.authentication.WebAuthenticationDetails;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.servlet.http.HttpSession;
 import java.time.Instant;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static io.github.jhipster.application.repository.CustomAuditEventRepository.EVENT_DATA_COLUMN_MAX_LENGTH;
+import javax.servlet.http.HttpSession;
 
 /**
  * Test class for the CustomAuditEventRepository class.

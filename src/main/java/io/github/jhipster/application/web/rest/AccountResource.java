@@ -18,9 +18,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.*;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-import java.util.*;
 
 /**
  * REST controller for managing the current user's account.

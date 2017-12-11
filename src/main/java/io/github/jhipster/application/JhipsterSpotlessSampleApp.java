@@ -2,7 +2,6 @@ package io.github.jhipster.application;
 
 import io.github.jhipster.application.config.ApplicationProperties;
 import io.github.jhipster.application.config.DefaultProfileUtil;
-
 import io.github.jhipster.config.JHipsterConstants;
 
 import org.slf4j.Logger;
@@ -15,11 +14,12 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
-import javax.annotation.PostConstruct;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Arrays;
 import java.util.Collection;
+
+import javax.annotation.PostConstruct;
 
 @ComponentScan
 @EnableAutoConfiguration(exclude = {MetricFilterAutoConfiguration.class, MetricRepositoryAutoConfiguration.class})

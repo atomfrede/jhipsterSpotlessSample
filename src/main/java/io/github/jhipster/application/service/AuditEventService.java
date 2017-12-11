@@ -2,6 +2,7 @@ package io.github.jhipster.application.service;
 
 import io.github.jhipster.application.config.audit.AuditEventConverter;
 import io.github.jhipster.application.repository.PersistenceAuditEventRepository;
+
 import org.springframework.boot.actuate.audit.AuditEvent;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

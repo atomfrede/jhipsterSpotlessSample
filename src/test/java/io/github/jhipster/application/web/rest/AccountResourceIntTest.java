@@ -1,20 +1,27 @@
 package io.github.jhipster.application.web.rest;
 
-import io.github.jhipster.application.config.Constants;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Matchers.anyObject;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
 import io.github.jhipster.application.JhipsterSpotlessSampleApp;
+import io.github.jhipster.application.config.Constants;
 import io.github.jhipster.application.domain.Authority;
 import io.github.jhipster.application.domain.User;
 import io.github.jhipster.application.repository.AuthorityRepository;
 import io.github.jhipster.application.repository.UserRepository;
 import io.github.jhipster.application.security.AuthoritiesConstants;
 import io.github.jhipster.application.service.MailService;
+import io.github.jhipster.application.service.UserService;
 import io.github.jhipster.application.service.dto.UserDTO;
 import io.github.jhipster.application.web.rest.errors.ExceptionTranslator;
 import io.github.jhipster.application.web.rest.vm.KeyAndPasswordVM;
 import io.github.jhipster.application.web.rest.vm.ManagedUserVM;
-import io.github.jhipster.application.service.UserService;
-import org.apache.commons.lang3.RandomStringUtils;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -30,18 +37,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Transactional;
+
 import java.time.Instant;
-import java.time.LocalDate;
-
 import java.util.*;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.hamcrest.Matchers.hasItem;
-import static org.mockito.Matchers.anyObject;
-import static org.mockito.Mockito.doNothing;
-import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 /**
  * Test class for the AccountResource REST controller.

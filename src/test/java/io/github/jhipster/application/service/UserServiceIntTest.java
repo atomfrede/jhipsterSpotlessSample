@@ -1,5 +1,7 @@
 package io.github.jhipster.application.service;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import io.github.jhipster.application.JhipsterSpotlessSampleApp;
 import io.github.jhipster.application.config.Constants;
 import io.github.jhipster.application.domain.User;
@@ -22,8 +24,6 @@ import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Test class for the UserResource REST controller.

@@ -1,9 +1,13 @@
 package io.github.jhipster.application.service;
-import io.github.jhipster.application.config.Constants;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.*;
 
 import io.github.jhipster.application.JhipsterSpotlessSampleApp;
+import io.github.jhipster.application.config.Constants;
 import io.github.jhipster.application.domain.User;
 import io.github.jhipster.config.JHipsterProperties;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,15 +23,12 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.thymeleaf.spring4.SpringTemplateEngine;
 
+import java.io.ByteArrayOutputStream;
+
 import javax.mail.Multipart;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
-import java.io.ByteArrayOutputStream;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Matchers.any;
-import static org.mockito.Mockito.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = JhipsterSpotlessSampleApp.class)

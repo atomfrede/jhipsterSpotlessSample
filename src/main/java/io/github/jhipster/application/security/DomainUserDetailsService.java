@@ -2,6 +2,7 @@ package io.github.jhipster.application.security;
 
 import io.github.jhipster.application.domain.User;
 import io.github.jhipster.application.repository.UserRepository;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.core.GrantedAuthority;

@@ -1,0 +1,17 @@
+spotless {
+    format 'misc', {
+        target '**/*.gradle', '**/*.md', '**/.gitignore'
+
+        trimTrailingWhitespace()
+        indentWithSpaces()
+        endWithNewline()
+    }
+
+    java {
+        trimTrailingWhitespace()
+        indentWithSpaces()
+        removeUnusedImports()
+
+        importOrder 'io.github.jhipster', 'com', 'io', 'org', 'java', 'javax', ''
+    }
+}

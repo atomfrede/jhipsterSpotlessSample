@@ -1,10 +1,15 @@
 package io.github.jhipster.application.web.rest;
 
+import static org.hamcrest.Matchers.hasItem;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
 import io.github.jhipster.application.JhipsterSpotlessSampleApp;
 import io.github.jhipster.application.config.audit.AuditEventConverter;
 import io.github.jhipster.application.domain.PersistentAuditEvent;
 import io.github.jhipster.application.repository.PersistenceAuditEventRepository;
 import io.github.jhipster.application.service.AuditEventService;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,11 +26,6 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Instant;
-import java.time.format.DateTimeFormatter;
-
-import static org.hamcrest.Matchers.hasItem;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 /**
  * Test class for the AuditResource REST controller.

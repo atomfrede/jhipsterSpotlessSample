@@ -1,7 +1,6 @@
 package io.github.jhipster.application.service;
 
 import io.github.jhipster.application.domain.User;
-
 import io.github.jhipster.config.JHipsterProperties;
 
 import org.apache.commons.lang3.CharEncoding;
@@ -15,8 +14,9 @@ import org.springframework.stereotype.Service;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.spring4.SpringTemplateEngine;
 
-import javax.mail.internet.MimeMessage;
 import java.util.Locale;
+
+import javax.mail.internet.MimeMessage;
 
 /**
  * Service for sending emails.

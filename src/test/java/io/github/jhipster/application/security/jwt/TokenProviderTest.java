@@ -1,9 +1,13 @@
 package io.github.jhipster.application.security.jwt;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import io.github.jhipster.application.security.AuthoritiesConstants;
 import io.github.jhipster.config.JHipsterProperties;
+
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -16,8 +20,6 @@ import org.springframework.test.util.ReflectionTestUtils;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class TokenProviderTest {
 

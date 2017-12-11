@@ -29,7 +29,7 @@ task initPaths(dependsOn: compileJava) {
     group = "liquibase"
     if (OperatingSystem.current().isWindows()) {
         dependsOn pathingLiquibaseJar
-	}
+    }
 }
 
 def liquibaseCommand(command) {
